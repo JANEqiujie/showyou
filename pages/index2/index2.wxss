@@ -1,0 +1,3 @@
+.back{background-color: rgb(145, 106, 75);
+  color: white;}
+.biaoti{color: rgb(145, 106, 75);font-size: xx-large;}

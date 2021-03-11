@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<!--向导头像-->
+<navigator class="back" >《 返回上一页</navigator>
+
+<view class="head">
+  <view>
+    <image  mode="heightFix" src="/pic/head.jpg" class="tou"></image>
+  </view>
+  
+  <text>张山</text>
+  
+  <navigator class="chet" url="/pages/contact/contact">
+    <image  mode="heightFix"  src="/pic/ccc.jpg" ></image>
+  </navigator>
+</view>
+
+  
+
+
+
+
+<view class="dynamic">
+  <view class="container">
+    <text class="tit">向导项目</text> 
+
+      <view class="dyMain">
+       <navigator class="dyItem" wx:for="{{dataList}}" url="{{row.link}}" wx:for-item="row" >
+
+        <view class="pic">
+          <image src="{{row.icon}}"></image>
+        </view>
+
+        <view class="txt">
+          <view class="title">
+             {{row.title}}
+          </view>
+          <view class="info">
+            导游：张山<text space="ensp">  - </text>时间：2020-12-2
+          </view>
+        
+        </view>
+        </navigator>
+        </view>
+       
+
+      </view>
+    
+
+  
+</view>
