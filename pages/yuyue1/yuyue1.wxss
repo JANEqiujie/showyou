@@ -1,0 +1,9 @@
+.back{background-color: rgb(145, 106, 75);
+  color: white;}
+.tui-picker-name{font-size:x-large;color: rgb(145, 106, 75);margin-top: 20rpx;}
+
+.tui-picker-detail{font-size:larger;background-color:wheat;margin-bottom: 40rpx;}
+
+.weui-cells__title{font-size:x-large;color: rgb(145, 106, 75);margin-top: 20rpx;}
+
+.section__title{font-size:x-large;color: rgb(145, 106, 75);margin-top: 20rpx;}

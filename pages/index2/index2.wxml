@@ -1,2 +1,39 @@
 <navigator class="back" url="/pages/index/index">《 返回上一页 </navigator>
+<view class="headpic">
+  <image src="/pic/beach.jpg"></image>
+</view>
 <text class="biaoti">三亚休闲游</text>
+<text class="neitong" space="ensp" >三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市“三威杭厦”之首，拥有全岛最美丽的海滨风光。就让张山导游带你了解当地风土人情，去了解不同鱼虾蟹种类。那些人少景美的小众沙滩，等待您的光临。</text>
+<text class="price"> 45元/小时,人数上限：10人</text>
+<navigator class="yuyue" url="/pages/yuyue1/yuyue1">预约</navigator>
+
+
+<textarea class='the_prw_in' bindinput='bindblur' cursor-spacing="130" placeholder='留言区，说点什么吧...' maxlength="76">
+              </textarea>
+              <view class='the_prw_btn' bindtap='btn_send'>
+                留言
+              </view>
+ 
+          <view>评论内容：</view>
+          <block wx:for="{{pl_list}}" wx:key="index">
+            <view class='the_msg' wx:if='{{item.input_value!=null}}'>
+              <!-- <view class='msg_left'>
+                <view class='msg_avatar_v'>
+                  <image class='msg_avatar' src='{{msg_data.avatar}}'></image>
+                </view>
+              </view> -->
+              <view class='msg_right'>
+                <!-- <view class='msg_right_name'>
+                  {{msg_data.nicename}}
+                </view> -->
+                <view class='msg_right_text'>
+                  <text>{{item.input_value}}</text>
+                </view>
+                <view class='gap'>
+                </view>
+              </view>
+            </view>
+          </block>
+
+
+

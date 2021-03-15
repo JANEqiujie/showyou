@@ -1,0 +1,67 @@
+<navigator class="back" url="/pages/index2/index2">《 返回上一页 </navigator>
+
+<view class="tui-picker-content">
+ <view class="tui-picker-name">时长</view>
+ <picker mode="time" value="{{time}}" start="09:00" end="17:30" bindchange="changeTime">
+ <view class="tui-picker-detail">
+  选择时长： {{time}} 
+ </view>
+ </picker>
+</view>
+ 
+<view class="tui-picker-content">
+ <view class="tui-picker-name">日期</view>
+ <picker mode="date" value="{{date}}" start="2017-10-01" end="2017-10-08" bindchange="changeDate">
+ <view class="tui-picker-detail">
+  出游日期: {{date}}
+ </view>
+ </picker>
+</view>
+ 
+<view class="tui-picker-content">
+ <view class="tui-picker-name">日期时间</view>
+ <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+ <view class="tui-picker-detail">
+  开始日期时间: {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}
+ </view>
+ </picker>
+</view>
+<view class="tui-picker-content">
+ <view class="tui-picker-name">日期时间</view>
+ <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+ <view class="tui-picker-detail">
+  结束日期时间: {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+ </view>
+ </picker>
+</view>
+
+<view class="page-section">
+    <view class="weui-cells__title">人数</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="number" placeholder="请输入您有几人一起参观" />
+      </view>
+    </view>
+  </view>
+
+  <view class="page">
+    <view class="page__hd">
+        <text class="page__title"></text>
+        <text class="page__desc"></text>
+    </view>
+    <view class="page__bd">
+        <view class="section section_gap">
+            <view class="section__title">是否接受拼单</view>
+            <view class="body-view">
+                <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+            </view>
+        </view>
+
+        <view class="section section_gap">
+            <view class="section__title">我已阅读并遵守违约协议</view>
+            <view class="body-view">
+                <switch type="checkbox" checked="{{switch2Checked}}" bindchange="switch2Change"/>
+            </view>
+        </view>
+    </view>
+</view>
